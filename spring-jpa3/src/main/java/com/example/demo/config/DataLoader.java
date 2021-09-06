@@ -14,7 +14,6 @@ public class DataLoader {
 	/** 定数 部門情報用インターフェイス格納 */
 	private final DepartmentRepository repository;
 	
-	@Override
 	public void run(String... args) throws Exception {
 		
 		// 部門クラス呼び出し(インスタンス化)
