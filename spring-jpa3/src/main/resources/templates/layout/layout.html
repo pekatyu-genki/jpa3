@@ -17,7 +17,6 @@
 		tabindex="-1"
 		id="offcanvasScrolling"
 		aria-labelledby="offcanvasScrollingLabel">
-		
 		<nav class="navbar-dark bg-image text-white h-100">
 			<div class="offcanvas-header">
 			<h4 class="offcanvas-title">
@@ -59,9 +58,11 @@
 				</div>
 			</div>
 		</nav>
-		
 		</div>
-	
+		
+		<!-- コンテンツの配置 -->
+		<div layout:fragment="content"></div>
+		
 	<script th:src="@{/webjars/bootstrap/js/bootstrap.bundle.min.js}"></script>
 </body>
 </html>
