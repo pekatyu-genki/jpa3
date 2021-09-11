@@ -1,13 +1,23 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
+	<!-- レイアウトで使用しない、ht:remove="tag"は無し -->
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" rel="Stylesheet">
-	<title>Title</title>
 </head>
 <body class="">
 	
-	<script th:src="@{/webjars/bootstrap/js/bootstrap.bundle.min.js}"></script>
+	<!-- サイドバー折り畳時のトグルボタン部分作成 -->
+	<div th:fragment="toggler">
+		<nav class="navbar navbar-expand-lg navbar-light">
+			<div class="container-fluid">
+				<button class="navbar-toggler" type="button"
+				data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
+				aria-controls="offcanvasScrolling" aria-expanded="false" aria-label="Toggle offcanvas">
+				<span class="navbar-toggler-icon"></span>
+				</button>
+			</div>
+		</nav>
+	</div>
+	
 </body>
 </html>
