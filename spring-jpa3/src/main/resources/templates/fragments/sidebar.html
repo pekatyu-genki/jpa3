@@ -4,15 +4,19 @@
 	<!-- レイアウトで使用しない、ht:remove="tag"は無し -->
 	<meta charset="UTF-8">
 </head>
-<body class="">
+<body>
 	
 	<!-- サイドバー折り畳時のトグルボタン部分作成 -->
 	<div th:fragment="toggler">
 		<nav class="navbar navbar-expand-lg navbar-light">
 			<div class="container-fluid">
-				<button class="navbar-toggler" type="button"
-				data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
-				aria-controls="offcanvasScrolling" aria-expanded="false" aria-label="Toggle offcanvas">
+				<button class="navbar-toggler"
+				type="button"
+				data-bs-toggle="offcanvas"
+				data-bs-target="#offcanvasScrolling"
+				aria-controls="offcanvasScrolling"
+				aria-expanded="false"
+				aria-label="Toggle offcanvas">
 				<span class="navbar-toggler-icon"></span>
 				</button>
 			</div>
