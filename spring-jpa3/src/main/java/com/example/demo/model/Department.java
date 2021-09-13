@@ -40,6 +40,6 @@ public class Department {
 	/**
 	 * 状態：リスト管理
 	 */
-	@OneToMany
+	@OneToMany(mappedBy = "department")
 	private List<Employee> employees;
 }

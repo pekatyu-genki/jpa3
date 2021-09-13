@@ -1,5 +1,6 @@
 package com.example.demo.config;
 
+import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
 import com.example.demo.model.Department;
@@ -9,11 +10,12 @@ import lombok.RequiredArgsConstructor;
 
 @RequiredArgsConstructor
 @Component
-public class DataLoader {
+public class DataLoader implements CommandLineRunner {
 
 	/** 定数 部門情報用インターフェイス格納 */
 	private final DepartmentRepository repository;
 	
+	@Override
 	public void run(String... args) throws Exception {
 		
 		// 部門クラス呼び出し(インスタンス化)
