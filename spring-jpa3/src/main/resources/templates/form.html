@@ -35,7 +35,7 @@
 								<div class="mb-3">
 									<label for="department">部署名</label>
 									<select class="form-select" th:field="*{department}">
-										<th:block th:each="department : ${departmentRepository.findAll()}">
+										<th:block th:each="department : ${@departmentRepository.findAll()}">
 											<option th:value="${department.id}" th:text="${department.name}"></option>
 										</th:block>
 									</select>
