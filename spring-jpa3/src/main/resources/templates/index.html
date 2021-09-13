@@ -5,14 +5,14 @@
 <head>
 	<meta charset="UTF-8" th:remove="tag">
 </head>
-<body class="">
+<body>
 	
 	<!-- コンテンツの表示 -->
 	<div layout:ftagment="content">
 		<main class="offcanvas-outside bg-light">
 			<div class="caontainer-fluid">
 				<!-- トグルボタン リプレイス(交換) -->
-				<div th:replace="~{fragments/sidebar :: toggler"></div>
+				<div th:replace="~{fragments/sidebar :: toggler}"></div>
 				
 				<div class="row">
 					<div class="col">
