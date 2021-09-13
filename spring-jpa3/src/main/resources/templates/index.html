@@ -26,7 +26,7 @@
 								<div th:if="${employees.size() == 0}">該当データがありません</div>
 								
 								<!-- 社員データが見つかった場合 -->
-								<table th:if="${wmployee.size() > 0}" class="table table-bordered">
+								<table th:if="${employees.size() > 0}" class="table table-bordered">
 									<thead>
 										<tr>
 											<th>#</th>
@@ -36,10 +36,10 @@
 										</tr>
 									</thead>
 									<tbody>
-										<tr th:each="employee : ${employee}" th:object="${employee}">
-											<td th:text="*{id}">
-											<td th:text="*{name}">
-											<td th:text="*{department.name}">
+										<tr th:each="employee : ${employees}" th:object="${employee}">
+											<td th:text="*{id}"></td>
+											<td th:text="*{name}"></td>
+											<td th:text="*{department.name}"></td>
 											<td>
 												<a th:href="@{/edit/{id}(id=*{id})}" class="btn btn-navy">
 													<i class="bi bi-pencil-square"></i>
